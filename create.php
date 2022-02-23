@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/basics.css">
     <title>Randonnées, ajout</title>
 </head>
 <body>
@@ -16,10 +17,13 @@
             <option value="difficile">Difficile</option>
             <option value="très difficile">Très difficile</option>
         </select>
-        <input type="number" name="distance">
+        <input type="number" name="distance" placeholder="Distance (km)" required>
         <!-- Ajoutez un / des champs pour gérer la donnée de type time à insérer via PHP -->
-        .....
-        <input type="number" name="height_difference">
+        <input type="time" name="duration" required>
+        <input type="number" name="height_difference" placeholder="Dénivelé (m)" required>
+        <input type="text" name="available" placeholder="Available">
+        <input id="enter" type="submit" name="Enter" value="ajouter">
+
     </form>
 </body>
 </html>
